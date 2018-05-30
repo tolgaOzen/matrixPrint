@@ -1,2 +1,3 @@
-# matrixPrint
-Matrix style fmt.print func
+### matrixPrint
+Matrix style fmt.print function in go terminal application
+
