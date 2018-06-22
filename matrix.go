@@ -6,18 +6,21 @@ import (
 	"fmt"
 )
 
+const (
+	MatrixMiliSeconds = time.Second * 1 / 30
+)
+
 func MPrint(val string) {
-	t := strings.Split(val, "")
+	splitValArray := strings.Split(val, "")
 
-	for _, a := range t {
+	for _, splitVal := range splitValArray {
 
+		var sleepTime = MatrixMiliSeconds
 
-		var c = time.Second * 1 / 20
+		time.Sleep(sleepTime)
 
-		time.Sleep(c)
-
-		fmt.Print(a)
+		fmt.Print(splitVal)
 
 	}
-	fmt.Print("\n")
+
 }
