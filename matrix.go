@@ -1,25 +1,29 @@
 package matrix
 
 import (
-	"strings"
-	"time"
 	"fmt"
+	"time"
 )
 
 const (
-	MatrixMiliSeconds = time.Second * 1 / 30
+	MatrixMiliSeconds = 10e6
 )
 
-func MPrint(val string) {
-	splitValArray := strings.Split(val, "")
+func MPrint(val ...interface{}) {
+	var returnVal string
 
-	for _, splitVal := range splitValArray {
+	for _, v := range val {
 
-		var sleepTime = MatrixMiliSeconds
+		returnVal = fmt.Sprintf("%v", v)
 
-		time.Sleep(sleepTime)
+		for _, splitVal := range returnVal {
 
-		fmt.Print(splitVal)
+			time.Sleep(MatrixMiliSeconds)
+
+			fmt.Print(string(splitVal))
+			//gopre.Pre(string(splitVal))
+
+		}
 
 	}
 
