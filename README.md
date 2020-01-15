@@ -1,4 +1,8 @@
-### matrixPrint
+# matrixPrint
+
+![GitHub](https://img.shields.io/github/license/tolgaOzen/matrixPrint?style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/tolgaOzen/matrixPrint?style=flat-square)
+
 Matrix style fmt.print function in go terminal application
 
 <p align="center">
