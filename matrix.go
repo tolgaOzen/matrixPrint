@@ -5,26 +5,13 @@ import (
 	"time"
 )
 
-const (
-	MatrixMiliSeconds = 10e6
-)
 
-func MPrint(val ...interface{}) {
-	var returnVal string
-
+func MPrint(millisecond  time.Duration, val ...interface{}) {
 	for _, v := range val {
-
-		returnVal = fmt.Sprintf("%v", v)
-
-		for _, splitVal := range returnVal {
-
-			time.Sleep(MatrixMiliSeconds)
-
+		va := fmt.Sprintf("%v", v)
+		for _, splitVal := range va {
+			time.Sleep(millisecond)
 			fmt.Print(string(splitVal))
-			//gopre.Pre(string(splitVal))
-
 		}
-
 	}
-
 }
