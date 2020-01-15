@@ -9,9 +9,7 @@ Matrix style fmt.print function in go terminal application
 ## Example
 
 ```go
-  
      matrix.MPrint(15e6, "Lorem Ipsum is simply dummy text of the printing and typesetting industry....")
-
 ```
 
 
